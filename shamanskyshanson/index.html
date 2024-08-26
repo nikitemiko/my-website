@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShamanskyShanson</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link type="image/x-icon" href="xico.png" rel="shortcut icon">
+    <link type="Image/x-icon" href="xico.png" rel="icon">
+    <link rel="stylesheet" title="theme" href="theme-dark.css">
+</head>
+<body>
+    <div class="theme" id="pocik" onclick="sound()">
+        <img class="changeTheme" data-theme="light" fill="none" src="themeswitchtwo.png" style="display: none;" width="100">
+        <img class="changeTheme" data-theme="dark" fill="none" src="themeswitch.png" style="display: block;" width="100">
+        
+    </div>
+    <script>
+        function sound(){
+            var audio = document.createElement('audio');
+            audio.setAttribute("autoplay","true");
+            audio.innerHTML = "<source src=\"minecraft_click.mp3\" type=\"audio/mpeg\">";
+            document.body.appendChild(audio);
+        }
+    </script>
+    
+
+    <div class="text-typing"> 
+        <div id="typed"></div>
+    </div>
+    
+    <div id="typed-strings">
+        <span>привет</span>
+        <span>вы знали, что на сайте можно<a href="beer.html" style="color: rgb(211, 177, 24)"> бахнуть пивандупалы</a>?</span>
+        <span>супер гига ультра турбо секретная <a href="https://open.spotify.com/track/5WhtlIoxoZrMmuaWWEQhwV?si=df57843059494960" style="color: #81b71a;"  target="_blank">ссылка</a> </span>
+        <span>я всегда готов зарубиться в <a href="https://online-tetris.ru" style="color: rgb(107, 26, 107);" target="_blank" rel="noopener noreferrer">тетрис</a></span>
+        <span>удивительная <a href="https://ru.pinterest.com/pin/124904589658265894/" style="color: rgb(192, 56, 56);" target="_blank" rel="noopener noreferrer">картина</a> нарисованная карандашом</span>
+        <span>лучшее <a href="https://www.youtube.com/watch?v=eUz2FkDEMwo" style="color: rgb(230, 64, 64);" target="_blank" rel="noopener noreferrer" >видео</a> в интернете</span>
+        <span>эбэбебеубэк)))</span>
+        <span>строчькс</span>
+        <span>ыпыппы пяпырпяпя ыппяю. бубвю...</span>
+        <span>я не спльтю ужже сутки</span>
+        <span>фан <a href="https://discord.gg/b8sezVGUxZ" style="color: rgb(72, 75, 241);" target="_blank" rel="noopener noreferrer">клуб</a> олеши</span>
+        <span>я не советую переходить по <a href="https://imgur.com/a/6hQHfyt" style="color: rgb(41, 138, 85);" target="_blank" rel="noopener noreferrer">этой ссылке</a>...</span>
+        <span>полнейший <a href="https://soundcloud.com/user-83845975/gradusy-nauchitsya-by-ne-paritsya-jerk-remix?si=ca5c6066ae964d789120d2100e5ab443&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" style="color: rgb(212, 106, 57);" target="_blank" rel="noopener noreferrer">бадабум</a></span>
+        <span>супер сус</span>
+        <span><a href="https://youtu.be/TBIlQ4pcM9c" style="color: rgb(255, 81, 81);" target="_blank" rel="noopener noreferrer" >Важное объявление ⚠️</a></span>
+        <span><a href="deb.html" target="_blank">чумачечий</a>...</span>
+        <span>эщкере</span>
+        <span>42</span>
+        
+    </div>
+    
+
+    <script>
+        const container = document.getElementById('typed-strings');
+        const spans = Array.from(container.getElementsByTagName('span'));
+    
+        const firstSpan = spans.shift();
+    
+        for (let i = spans.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [spans[i], spans[j]] = [spans[j], spans[i]];
+        }
+    
+    
+        container.innerHTML = '';
+    
+       
+        container.appendChild(firstSpan);
+    
+       
+        spans.forEach(span => container.appendChild(span));
+    </script>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script>
+        let typed = new Typed('#typed', { 
+    stringsElement: '#typed-strings', 
+    typeSpeed: 90, 
+    startDelay: 500, 
+    backSpeed: 50, 
+    backDelay: 2000,
+    loop: true,
+    showCursor: true
+});
+    </script>
+  <div class="link-container">
+    <a href="https://web.telegram.org/a/#-1002131392197" target="_blank" class="link">
+        <img src="icon1.png" alt="Icon 1" class="icon default-icon"> telegram
+        <img src="icon1-hover.png" alt="Icon 1 Hover" class="icon hover-icon">
+    </a>
+    <a href="https://soundcloud.com/shamanskyshanson" target="_blank" class="link">
+        <img src="icon2.png" alt="Icon 2" class="icon default-icon"> soundcloud
+        <img src="icon2-hover.png" alt="Icon 2 Hover" class="icon hover-icon">
+    </a>
+    <a href="https://steamcommunity.com/id/shamanskyshanson/" target="_blank" class="link">
+        <img src="icon3.png" alt="Icon 3" target="_blank" class="icon default-icon"> steam
+        <img src="icon3-hover.png" alt="Icon 3 Hover" class="icon hover-icon">
+    </a>
+    <a href="https://discordapp.com/users/483641194404904961/" target="_blank" class="link">
+        <img src="icon4.png" alt="Icon 4" class="icon default-icon"> discord
+        <img src="icon4-hover.png" alt="Icon 4 Hover" class="icon hover-icon">
+    </a>
+    <a href="https://github.com/nikitemiko" target="_blank" class="link">
+        <img src="icon5.png" alt="Icon 5" class="icon default-icon"> github
+        <img src="icon5-hover.png" alt="Icon 5 Hover" class="icon hover-icon">
+    </a>
+    <script src="main.js"></script>
+</div>
+</body>
+</html>

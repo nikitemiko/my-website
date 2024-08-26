@@ -1,0 +1,18 @@
+body {
+    background: #242424;
+    color: rgb(221, 221, 221);
+}
+
+.link {
+    color: #292929;
+    background: #dfdfdf;
+    box-shadow: 0 4px 6px rgba(240, 240, 240, 0.1);
+    transition: all 0.3s ease;
+}
+
+.link:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    background: #424242;
+    color: #272727;
+}
